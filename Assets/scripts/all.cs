@@ -12,14 +12,14 @@ public class all : MonoBehaviour
     public GameObject leftEye;
     public GameObject sqLeftEye;
     public GameObject O;
-
+    public float x;
 
     public void Mouth(bool mouth,bool mouth1,bool sqmouth){
             this.mouth.SetActive(mouth); 
             this.mouth1.SetActive(mouth1);
             this.sqmouth.SetActive(sqmouth);
     } 
-
+    
     public void Eye(bool active1, bool active2){
             rightEye.SetActive(active1); 
             leftEye.SetActive(active1);
