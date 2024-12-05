@@ -4,6 +4,9 @@
 /Library
 /Logs
 /Packages
+*.meta
+/Assets/*
+!/Assets/Scripts/
 /ProjectSettings
 /seventhPro.sln
 /Temp

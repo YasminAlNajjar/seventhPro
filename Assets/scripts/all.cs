@@ -12,16 +12,14 @@ public class all : MonoBehaviour
     public GameObject leftEye;
     public GameObject sqLeftEye;
     public GameObject O;
-    public float x;
+
 
     public void Mouth(bool mouth,bool mouth1,bool sqmouth){
             this.mouth.SetActive(mouth); 
             this.mouth1.SetActive(mouth1);
             this.sqmouth.SetActive(sqmouth);
     } 
-    // public void Mouth1(bool active){
-    //         mouth1.SetActive(active); 
-    // } 
+
     public void Eye(bool active1, bool active2){
             rightEye.SetActive(active1); 
             leftEye.SetActive(active1);
@@ -70,6 +68,7 @@ public class all : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.LeftArrow)){
             O.SetActive(false);
             Mouth(false,true,false);
+
             leftEye.transform.localScale=new Vector3(1.8f,1f,2.25f);
             rightEye.transform.localScale=new Vector3(1.8f,1f,2.25f);
             mouth1.transform.rotation=Quaternion.Euler (new Vector3(180,0,0));
